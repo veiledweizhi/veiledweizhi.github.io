@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veiled Weizhi Industries Ltd</title>
+<meta name="description" content="Veiled Weizhi Industries Ltd – web application development and consulting. Private company registered in Cyprus, HE 500544.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  @font-face { font-family: "Barlow SC"; src: url("fonts/barlow-sc-extrabold.woff2") format("woff2"); font-weight: 800; font-display: swap; }
+  @font-face { font-family: "Barlow SC"; src: url("fonts/barlow-sc-bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+
+  :root {
+    --bg: #f6f4ef;
+    --card: #fffdf9;
+    --ink: #1c1b19;
+    --muted: #6b675f;
+    --line: #e2ddd2;
+    --accent: #a8322a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141312;
+      --card: #1c1b19;
+      --ink: #eeebe4;
+      --muted: #a29d93;
+      --line: #34312c;
+      --accent: #d9584d;
+    }
+  }
+
+  * { box-sizing: border-box; margin: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 16px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  main {
+    width: 100%;
+    max-width: 560px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 48px 40px 40px;
+  }
+
+  .mark { display: block; width: 56px; height: 56px; color: var(--accent); margin-bottom: 28px; }
+
+  h1 {
+    font-family: "Barlow SC", "Arial Narrow", sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.6rem, 6vw, 2.15rem);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .what { margin-top: 10px; color: var(--muted); font-size: 1.05rem; }
+
+  .contact { margin-top: 28px; }
+  .contact a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1px;
+  }
+  .contact a:hover { color: var(--accent); }
+
+  dl {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 24px;
+    font-size: 0.92rem;
+  }
+  dt {
+    font-family: "Barlow SC", "Arial Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+  dd { margin: 0; }
+
+  footer { margin-top: 20px; font-size: 0.8rem; color: var(--muted); }
+
+  @media (max-width: 520px) {
+    main { padding: 36px 22px 28px; }
+    dl { grid-template-columns: 1fr; gap: 2px; }
+    dd { margin-bottom: 12px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 56 56" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3">
+    <circle cx="28" cy="28" r="25.5"/>
+    <rect x="18.5" y="18.5" width="19" height="19"/>
+  </svg>
+
+  <h1>Veiled Weizhi Industries Ltd</h1>
+  <p class="what">Web application development and consulting</p>
+
+  <p class="contact"><a href="mailto:info@veiledweizhi.com">info@veiledweizhi.com</a></p>
+
+  <dl>
+    <dt>Company</dt>
+    <dd>Veiled Weizhi Industries Ltd</dd>
+
+    <dt>Legal form</dt>
+    <dd>Private company limited by shares</dd>
+
+    <dt>Registered in</dt>
+    <dd>Republic of Cyprus</dd>
+
+    <dt>Registration no.</dt>
+    <dd>HE 500544</dd>
+
+    <dt>Registered office</dt>
+    <dd>Amathountos 31<br>Amathous Beach House, Grafeio 12<br>4532 Agios Tychonas, Lemesos<br>Cyprus</dd>
+
+    <!-- Add once the VAT number is issued:
+    <dt>VAT no.</dt>
+    <dd>CY________X</dd>
+    -->
+  </dl>
+</main>
+<footer>© 2026 Veiled Weizhi Industries Ltd</footer>
+</body>
+</html>
